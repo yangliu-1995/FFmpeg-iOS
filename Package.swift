@@ -12,6 +12,41 @@ let package = Package(
                 "avcodec", "avutil", "avformat", "avfilter", "avdevice", "swscale", "swresample",
                 "fftools", "Dummy",
             ]),
+        .library(
+            name: "Libavcodec",
+            targets: [
+                "avcodec",
+            ]),
+        .library(
+            name: "Libavutil",
+            targets: [
+                "avutil",
+            ]),
+        .library(
+            name: "Libavformat",
+            targets: [
+                "avformat",
+            ]),
+        .library(
+            name: "Libavfilter",
+            targets: [
+                "avfilter",
+            ]),
+        .library(
+            name: "Libavdevice",
+            targets: [
+                "avdevice",
+            ]),
+        .library(
+            name: "Libswscale",
+            targets: [
+                "swscale",
+            ]),
+        .library(
+            name: "Libfftools",
+            targets: [
+                "fftools",
+            ]),
     ],
     dependencies: [
         .package(url: "https://github.com/kewlbear/FFmpeg-iOS-Support", from: "0.0.1"),
